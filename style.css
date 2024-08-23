@@ -1,0 +1,85 @@
+@font-face {
+    font-family: 'Helvetica Light';
+    src: url('/fonts/helvetica_light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Helvetica Light', Arial, sans-serif;
+}
+
+.calculator {
+    display: grid;
+    gap: 10px;
+}
+
+.display {
+    color: white;  
+    font-size: 40px; 
+    text-align: right;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.calc-button {
+    width: 75px; 
+    height: 75px;
+    border-radius: 50%;
+    border: none;
+    color: white;
+    font-size: 30px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-family: 'Helvetica Light', Arial, sans-serif;
+    background-color: darkgray;
+    transition: background-color 0.5s ease;
+}
+
+.calc-button.zero-button {
+    width: calc(75px * 2 + 10px);
+    border-radius: 37.5px;
+    justify-content: flex-start;
+    padding-left: 25px;
+}
+
+.calc-button:active {
+    animation: fadeToWhite 0.5s forwards;
+}
+
+.calc-button.ac, .calc-button.sign-toggle, .calc-button.percent {
+    background-color: grey;
+}
+
+.calc-button.divide, .calc-button.multiply, .calc-button.minus, .calc-button.plus, .calc-button.equals {
+    background-color: orange;
+}
+
+.calc-button.digit {
+    background-color: darkgray;
+}
+
+@keyframes fadeToWhite {
+    0% {
+        background-color: currentColor;
+    }
+    100% {
+        background-color: white;
+    }
+}

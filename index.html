@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <!-- Display area for the clicked numbers -->
+        <div class="display" id="display">0</div>
+        
+        <!-- Buttons and different rows -->
+        <div class="row">
+            <button class="calc-button ac">AC</button>
+            <button class="calc-button sign-toggle">+/-</button>
+            <button class="calc-button percent">%</button>
+            <button class="calc-button divide">÷</button>
+        </div>
+        <div class="row">
+            <button class="calc-button digit" data-value="7">7</button>
+            <button class="calc-button digit" data-value="8">8</button>
+            <button class="calc-button digit" data-value="9">9</button>
+            <button class="calc-button multiply">✕</button>
+        </div>
+        <div class="row">
+            <button class="calc-button digit" data-value="4">4</button>
+            <button class="calc-button digit" data-value="5">5</button>
+            <button class="calc-button digit" data-value="6">6</button>
+            <button class="calc-button minus">-</button>
+        </div>
+        <div class="row">
+            <button class="calc-button digit" data-value="1">1</button>
+            <button class="calc-button digit" data-value="2">2</button>
+            <button class="calc-button digit" data-value="3">3</button>
+            <button class="calc-button plus">+</button>
+        </div>
+        <div class="row">
+            <button class="calc-button zero-button digit" data-value="0">0</button>
+            <button class="calc-button digit" data-value=".">.</button>
+            <button class="calc-button equals">=</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
